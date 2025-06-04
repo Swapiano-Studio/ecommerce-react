@@ -1,4 +1,4 @@
-import NavBar from "../component/ui/Navbar";
+import NavBar from "../component/ui/NavBar";
 import Footer from "../component/ui/Footer";
 import { ToastContainer } from 'react-toastify';
 import { Outlet, useLocation } from "react-router-dom";
