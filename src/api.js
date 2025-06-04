@@ -1,10 +1,10 @@
 import axios from "axios"
 import { jwtDecode } from "jwt-decode"
 
-export const MEDIA_URL = "https://myshop-api-wixh.onrender.com"
+export const MEDIA_URL = import.meta.env.VITE_MEDIA_URL || "https://127.0..0:8000"
 
 const api = axios.create({
-    baseURL: "https://myshop-api-wixh.onrender.com",
+    baseURL: MEDIA_URL,
 })
 
 api.interceptors.request.use(
