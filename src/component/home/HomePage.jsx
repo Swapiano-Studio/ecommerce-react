@@ -1,4 +1,4 @@
-import Header from './header';
+import Header from './Header';
 import CardContainer from './CardContainer';
 import api from '../../api';
 import { useEffect, useState } from 'react';
