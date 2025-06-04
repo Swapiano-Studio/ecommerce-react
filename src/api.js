@@ -1,7 +1,7 @@
 import axios from "axios"
 import { jwtDecode } from "jwt-decode"
 
-export const MEDIA_URL = import.meta.env.VITE_MEDIA_URL || "https://127.0..0:8000"
+export const MEDIA_URL = import.meta.env.VITE_MEDIA_URL || "https://127.0.0.1:8000"
 
 const api = axios.create({
     baseURL: MEDIA_URL,

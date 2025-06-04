@@ -13,7 +13,8 @@ const useCartData = () => {
     const cartCode = localStorage.getItem("cart_code");
 
     if (!cartCode) {
-      console.warn("Cart code not found in localStorage");
+      setCartItems([]);
+      setCartTotal(0);
       setIsLoading(false);
       return;
     }
@@ -26,7 +27,7 @@ const useCartData = () => {
       })
       .catch((err) => {
         console.error("Error fetching cart:", err.message);
-        setError("Gagal memuat keranjang.");
+        setError("Failed to fetch cart data. Please try again later.");
       })
       .finally(() => {
         setIsLoading(false);

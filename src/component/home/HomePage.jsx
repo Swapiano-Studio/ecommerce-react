@@ -26,7 +26,6 @@ function HomePage() {
       try {
         setLoading(true); // Set loading true before fetch
         const response = await api.get("products");
-        console.log("Products fetched:", response.data); // Log the fetched products
         setProducts(response.data);
         setError("");
       } catch (err) {
