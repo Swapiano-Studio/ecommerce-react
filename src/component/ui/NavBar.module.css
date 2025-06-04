@@ -1,0 +1,91 @@
+.stickyNavbar {
+    background-color: #EFE3C2;
+    position: sticky !important;
+    top: 0;
+    z-index: 1030;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 12px rgba(96,80,220,0.08);
+}
+
+.navbar {
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 4px 24px rgba(96,80,220,0.10);
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    color: #6050DC !important;
+    text-shadow: 1px 1px 0 #fff, 0 2px 8px #6050DC22;
+}
+
+.navbar-toggler {
+    border: none;
+    background: #fff !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #6050DC22;
+    transition: background 0.2s;
+}
+
+.navbar-toggler:focus {
+    outline: 2px solid #6050DC;
+}
+
+.navbar-nav .nav-link {
+    color: #222;
+    font-weight: 500;
+    border-radius: 8px;
+    margin: 0 0.25rem;
+    padding: 0.5rem 1.1rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    background: linear-gradient(90deg, #6050DC 60%, #A084E8 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px #6050DC33;
+}
+
+.btn-dark {
+    background: linear-gradient(90deg, #6050DC 60%, #A084E8 100%);
+    border: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px #6050DC33;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-dark:hover, .btn-dark:focus {
+    background: linear-gradient(90deg, #A084E8 60%, #6050DC 100%);
+    box-shadow: 0 4px 16px #6050DC44;
+}
+
+.position-relative .badge {
+    background: #fff !important;
+    color: #6050DC !important;
+    border: 2px solid #6050DC;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #6050DC22;
+}
+
+@media (max-width: 991px) {
+    .responsiveCart {
+        margin-top: 20px;
+    }
+    .navbar-collapse, .dropdown-menu {
+        background: #EFE3C2;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 4px 24px #6050DC22;
+        padding: 1.2rem 0.5rem;
+    }
+    .navbar-nav .nav-link {
+        margin-bottom: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .btn-dark {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+

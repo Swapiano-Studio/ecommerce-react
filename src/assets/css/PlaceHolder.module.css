@@ -1,0 +1,143 @@
+
+.shimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Mengurangi lebar efek shimmer */
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%, /* Mengurangi opacity shimmer */
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 1.5s infinite; /* Memperlambat animasi */
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%); /* Memperpanjang jarak animasi */
+  }
+}
+
+.col {
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.col:hover {
+  transform: translateY(-5px);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+  
+  /* Specific styles for card components */
+  .cardSkeleton {
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    max-width: 250px; /* Membatasi lebar maksimum card */
+    margin: 0 auto; /* Center card jika lebih kecil dari container*/
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardSkeleton:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cardImgWrapperSkeleton {
+    position: relative;
+    background: #f5f5f5;
+    padding-top: 133.33%; /* Aspect ratio 3:4 (75% → 133.33%) */
+    overflow: hidden;
+  }
+  
+  .cardSkeleton:hover .cardImgTopSkeleton {
+    transform: scale(1.03); /* Kurangi skala zoom hover */
+  }
+
+  .imgProductSkeleton {
+    position: relative;
+    background: #e2e8f0;
+    padding-top: 100%; /* Aspect ratio 3:4 (75% → 133.33%) */
+    overflow: hidden;
+  }
+  
+  .cardSkeleton:hover .cardImgTopSkeleton {
+    transform: scale(1.03); /* Kurangi skala zoom hover */
+  }
+  
+  .textSkeleton {
+    padding: 1rem;
+    flex: 1;
+    /* justify-content: flex-end; */
+  }  
+
+  .titleSkeleton {
+    height: 20px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .priceSkeleton {
+    height: 16px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .titleProductSkeleton {
+    height: 50px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slugProductSkeleton {
+    height: 26px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .priceProductSkeleton {
+    height: 30px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .descriptionProductSkeleton {
+    height: 24px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
